@@ -7,6 +7,10 @@ import java.util.Date;
  */
 public class Servico extends Basico {
     public Funcionario funcionario;
+    
+    public Servico(){
+    	
+    }
 
     public Servico(String id, double preco, String tag, Funcionario funcionario){
         super.setId(id);
@@ -14,4 +18,15 @@ public class Servico extends Basico {
         super.setTag(tag);
         this.funcionario = funcionario;
     }
+
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}
+
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
+    
+    
+    
 }
